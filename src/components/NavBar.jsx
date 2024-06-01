@@ -1,3 +1,4 @@
+import { FaRegCompass } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -31,7 +32,8 @@ const NavBar = () => {
                             { links }
                         </ul>
                     </div>
-                    <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                    <FaRegCompass className="text-xl text-[#F2613F] mt-1"/>
                         <h2 className="text-xl font-bold">COM<span className="text-[#F2613F]">PASS</span></h2>
                     </div>
                 </div>
