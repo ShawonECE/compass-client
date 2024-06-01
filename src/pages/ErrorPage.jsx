@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link, useRouteError } from "react-router-dom";
+import Button from "../components/Button";
 
 const ErrorPage = () => {
     const error = useRouteError();
@@ -19,7 +20,7 @@ const ErrorPage = () => {
                 <p className="mb-4">
                     <i>{error.statusText || error.message}</i>
                 </p>
-                <Link to='/'><button className="btn bg-[#0C0C0C] text-[#F2613F] border-x-0 border-t-0 border-b-2 border-b-[#F2613F] rounded-none">Go to Home</button></Link>
+                <Link to='/'><Button text="Go to Home"></Button></Link>
             </div>
         </div>
     );
