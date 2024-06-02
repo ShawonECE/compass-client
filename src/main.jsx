@@ -13,6 +13,12 @@ import Packages from './pages/Packages';
 import Blogs from './pages/Blogs';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -46,10 +52,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <AuthProvider> */}
+    <QueryClientProvider client={queryClient}>
+      {/* <AuthProvider> */}
       <HelmetProvider>
         <RouterProvider router={router} />
       </HelmetProvider>
-    {/* </AuthProvider> */}
+      {/* </AuthProvider> */}
+    </QueryClientProvider>
   </React.StrictMode>
 )
