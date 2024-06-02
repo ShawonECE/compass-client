@@ -9,7 +9,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import Root from './Root';
-import Community from './pages/Community';
+import Packages from './pages/Packages';
 import Blogs from './pages/Blogs';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/community",
-        element: <Community />,
+        path: "/packages",
+        element: <Packages />,
       },
       {
         path: "/blogs",

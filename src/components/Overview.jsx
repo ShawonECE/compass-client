@@ -1,7 +1,8 @@
 const Overview = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
-            <div>
+            <div className="my-auto relative">
+                <div className="w-full h-full absolute bg-black bg-opacity-30 rounded-lg"></div>
                 <img src="https://i.ibb.co/pRLhPKb/mountain.jpg" alt="" className="w-full rounded-lg"/>
             </div>
             <div className="my-auto">

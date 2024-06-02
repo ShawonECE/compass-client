@@ -1,0 +1,172 @@
+[
+    {
+        "coverImage": "https://i.ibb.co/4WhXRcP/greece-1.png",
+        "subImage": "https://i.ibb.co/vQK224Z/greece-2.png",
+        "tourType": "Cultural Heritage",
+        "tripTitle": "Ancient Wonders of Greece",
+        "price": "1999",
+        "about": "Explore the rich cultural heritage of Greece, from ancient ruins to vibrant local traditions.",
+        "tourPlan": {
+            "day1": "Arrival in Athens and welcome dinner.",
+            "day2": "Visit the Acropolis and Parthenon.",
+            "day3": "Explore the ancient city of Delphi.",
+            "day4": "Tour the Peloponnese region and Mycenae.",
+            "day5": "Relax in the coastal town of Nafplio.",
+            "day6": "Visit the Temple of Poseidon at Cape Sounion.",
+            "day7": "Departure from Athens."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/XxNSVXq/alps-1.png",
+        "subImage": "https://i.ibb.co/WKKwhBj/alps-2.png",
+        "tourType": "Adventure and Hiking",
+        "tripTitle": "Hiking the Swiss Alps",
+        "price": "2499",
+        "about": "Experience the breathtaking beauty of the Swiss Alps with guided hikes and scenic vistas.",
+        "tourPlan": {
+            "day1": "Arrival in Zurich and welcome dinner.",
+            "day2": "Hike to the summit of Mount Pilatus.",
+            "day3": "Explore the Lauterbrunnen Valley.",
+            "day4": "Hike the Eiger Trail in Grindelwald.",
+            "day5": "Visit the Aletsch Glacier.",
+            "day6": "Relax in the spa town of Leukerbad.",
+            "day7": "Departure from Zurich."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/qRYyjjk/kenya-1.png",
+        "subImage": "https://i.ibb.co/vcVr7Wv/kenya-2.png",
+        "tourType": "Wildlife and Nature",
+        "tripTitle": "Safari Adventure in Kenya",
+        "price": "2999",
+        "about": "Embark on an unforgettable safari adventure in Kenya's iconic national parks and reserves.",
+        "tourPlan": {
+            "day1": "Arrival in Nairobi and welcome dinner.",
+            "day2": "Safari in Amboseli National Park.",
+            "day3": "Visit Lake Nakuru National Park.",
+            "day4": "Explore Maasai Mara Game Reserve.",
+            "day5": "Full-day game drive in Maasai Mara.",
+            "day6": "Visit a Maasai village.",
+            "day7": "Departure from Nairobi."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/TmrV6Sg/maldives-1.png",
+        "subImage": "https://i.ibb.co/Z6WG1pg/maldives-2.png",
+        "tourType": "Beach and Relaxation",
+        "tripTitle": "Tropical Paradise in Maldives",
+        "price": "3999",
+        "about": "Relax and unwind in the pristine beaches and crystal-clear waters of the Maldives.",
+        "tourPlan": {
+            "day1": "Arrival in Malé and transfer to resort.",
+            "day2": "Relax on the beach and enjoy water sports.",
+            "day3": "Snorkeling and coral reef exploration.",
+            "day4": "Island hopping tour.",
+            "day5": "Spa day and sunset cruise.",
+            "day6": "Beach BBQ and cultural show.",
+            "day7": "Departure from Malé."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/jWDG5Qz/italy-1.png",
+        "subImage": "https://i.ibb.co/WfjykxD/italy-2.png",
+        "tourType": "Culinary and Wine",
+        "tripTitle": "Gourmet Tour of Italy",
+        "price": "3499",
+        "about": "Indulge in the flavors of Italy with a gourmet tour of its most iconic culinary destinations.",
+        "tourPlan": {
+            "day1": "Arrival in Rome and welcome dinner.",
+            "day2": "Cooking class and tour of local markets.",
+            "day3": "Wine tasting in Tuscany.",
+            "day4": "Explore the food scene in Florence.",
+            "day5": "Truffle hunting in Piedmont.",
+            "day6": "Visit a cheese farm in Emilia-Romagna.",
+            "day7": "Departure from Milan."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/hB51v66/egypt-1.png",
+        "subImage": "https://i.ibb.co/R4dy9xV/egypt-2.png",
+        "tourType": "Cultural Heritage",
+        "tripTitle": "Historical Journey Through Egypt",
+        "price": "2599",
+        "about": "Discover the ancient wonders of Egypt, from the pyramids to the temples along the Nile.",
+        "tourPlan": {
+            "day1": "Arrival in Cairo and welcome dinner.",
+            "day2": "Visit the Pyramids of Giza and the Sphinx.",
+            "day3": "Tour the Egyptian Museum.",
+            "day4": "Fly to Luxor and explore Karnak Temple.",
+            "day5": "Cruise the Nile and visit Edfu.",
+            "day6": "Explore the Valley of the Kings.",
+            "day7": "Departure from Cairo."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/Rj8SNgR/patagonia-1.png",
+        "subImage": "https://i.ibb.co/DVpnJx0/patagonia-2.png",
+        "tourType": "Adventure and Hiking",
+        "tripTitle": "Patagonia Expedition",
+        "price": "3299",
+        "about": "Experience the rugged beauty of Patagonia with guided hikes and breathtaking landscapes.",
+        "tourPlan": {
+            "day1": "Arrival in Punta Arenas and welcome dinner.",
+            "day2": "Hike in Torres del Paine National Park.",
+            "day3": "Explore the Grey Glacier.",
+            "day4": "Hike to the base of the Towers.",
+            "day5": "Visit the French Valley.",
+            "day6": "Relax in Puerto Natales.",
+            "day7": "Departure from Punta Arenas."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/H4xt8nQ/amazon-1.png",
+        "subImage": "https://i.ibb.co/9wrnhQ8/amazon-2.png",
+        "tourType": "Wildlife and Nature",
+        "tripTitle": "Amazon Rainforest Expedition",
+        "price": "2799",
+        "about": "Delve into the heart of the Amazon Rainforest and discover its incredible biodiversity.",
+        "tourPlan": {
+            "day1": "Arrival in Manaus and welcome dinner.",
+            "day2": "Boat tour of the Amazon River.",
+            "day3": "Jungle hike and wildlife spotting.",
+            "day4": "Visit a local indigenous community.",
+            "day5": "Explore the flooded forests.",
+            "day6": "Canopy walk and birdwatching.",
+            "day7": "Departure from Manaus."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/Lv5MjH0/caribbean-1.png",
+        "subImage": "https://i.ibb.co/4px2NKc/caribbean-2.png",
+        "tourType": "Beach and Relaxation",
+        "tripTitle": "Caribbean Escape in Jamaica",
+        "price": "2299",
+        "about": "Relax and rejuvenate on the beautiful beaches of Jamaica with plenty of sun, sand, and sea.",
+        "tourPlan": {
+            "day1": "Arrival in Montego Bay and welcome dinner.",
+            "day2": "Relax on Seven Mile Beach.",
+            "day3": "Snorkeling and water sports.",
+            "day4": "Visit Dunn's River Falls.",
+            "day5": "Explore Negril's cliffs and caves.",
+            "day6": "Spa day and reggae night.",
+            "day7": "Departure from Montego Bay."
+        }
+    },
+    {
+        "coverImage": "https://i.ibb.co/Ybr9mhS/france-1.png",
+        "subImage": "https://i.ibb.co/yq36Nxx/france-2.png",
+        "tourType": "Culinary and Wine",
+        "tripTitle": "French Wine Country Tour",
+        "price": "2999",
+        "about": "Savor the finest wines and culinary delights of France's renowned wine regions.",
+        "tourPlan": {
+            "day1": "Arrival in Paris and welcome dinner.",
+            "day2": "Wine tasting in Bordeaux.",
+            "day3": "Explore the vineyards of Burgundy.",
+            "day4": "Visit Champagne and taste sparkling wines.",
+            "day5": "Gourmet dining in Lyon.",
+            "day6": "Tour the Loire Valley castles.",
+            "day7": "Departure from Paris."
+        }
+    }
+]
