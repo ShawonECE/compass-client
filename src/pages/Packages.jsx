@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import { axiosPublic } from "../hooks/useAxiosPublic";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 import PackageCard from "../components/PackageCard";
 import SectionTitle from './../components/SectionTitle';
 
 const Packages = () => {
+    const axiosPublic = useAxiosPublic();
+
     const { isPending, data } = useQuery({ queryKey: ['packages'], queryFn: async() => {
         const data = await axiosPublic.get('/packages');
         return data.data;

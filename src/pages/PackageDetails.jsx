@@ -1,11 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
-import { axiosPublic } from "../hooks/useAxiosPublic";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 import { Helmet } from "react-helmet-async";
 
 const PackageDetails = () => {
     const { id } = useParams();
     let days = [];
+
+    const axiosPublic = useAxiosPublic();
 
     const { isPending, data = {} } = useQuery({ queryKey: [`package_${id}`], queryFn: async() => {
         const data = await axiosPublic.get(`/package/${id}`);

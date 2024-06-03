@@ -1,10 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import { axiosPublic } from "../hooks/useAxiosPublic";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 import PackageCard from "./PackageCard";
 import Button from './Button';
 import { useNavigate } from "react-router-dom";
 
 const PackagesInHome = () => {
+    const axiosPublic = useAxiosPublic();
+
     const { isPending, data } = useQuery({ queryKey: ['3packages'], queryFn: async() => {
         const data = await axiosPublic.get('/packages?limit=3');
         return data.data;
