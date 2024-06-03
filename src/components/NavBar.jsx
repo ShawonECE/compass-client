@@ -1,13 +1,33 @@
+import { useContext } from "react";
 import { FaRegCompass } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "./AuthProvider";
+import { LuUserCircle } from "react-icons/lu";
 
 const NavBar = () => {
+    const {user, logOutUser, loading} = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOutUser()
+        .catch(error => console.error(error));
+    };
+
     const handleActiveNavLink = ({ isActive }) => {
         return {
             color: isActive ? "#F2613F" : "",
             backgroundColor: isActive ? "#00000000" : "",
             borderRadius: '0px',
             borderBottom: isActive ? "2px solid #F2613F" : "",
+            fontWeight: isActive ? "600" : "",
+        };
+    };
+
+    const handleActiveNavLink2 = ({ isActive }) => {
+        return {
+            color: isActive ? "#F2613F" : "",
+            backgroundColor: isActive ? "#00000000" : "",
+            borderRadius: '8px',
+            border: isActive ? "2px solid #F2613F" : "",
             fontWeight: isActive ? "600" : "",
         };
     };
@@ -46,13 +66,37 @@ const NavBar = () => {
                     <div className="flex-none gap-2">
                         <div className="dropdown dropdown-hover dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                </div>
+                                {
+                                    !loading && (user?.photoURL ?
+                                        <div className="avatar">
+                                            <div className="w-8 rounded-full">
+                                                <img src={user.photoURL} />
+                                            </div>
+                                        </div>
+                                        :
+                                        <LuUserCircle className="text-[32px]" />)
+                                }
+                                {
+                                    loading &&
+                                    <div className="skeleton w-8 h-8 rounded-full shrink-0"></div>
+                                }
                             </div>
                             <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-[#0C0C0C] rounded-box w-52">
-                                <li><a>Dashboard</a></li>
-                                <li><a>Log in</a></li>
+                                {
+                                    user &&
+                                    <>
+                                        <li className="mb-1 text-[#F2613F]">{ user.displayName }</li>
+                                        <li className="mb-2 text-[#F2613F]">{ user.email }</li>
+                                    </>
+                                }
+                                <li>
+                                    {
+                                        !loading && (user ?
+                                            <button onClick={handleLogOut} className="btn-block bg-[#F2613F] border-0">Log Out</button>
+                                            :
+                                            <NavLink to="/login" style={handleActiveNavLink2}>Log in</NavLink>)
+                                    }
+                                </li>
                             </ul>
                         </div>
                     </div>

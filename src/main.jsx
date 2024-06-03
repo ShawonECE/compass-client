@@ -19,6 +19,8 @@ import {
 } from '@tanstack/react-query';
 import PackageDetails from './pages/PackageDetails';
 import AuthProvider from './components/AuthProvider';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const queryClient = new QueryClient();
 
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ]
   },
