@@ -51,7 +51,7 @@ const NavBar = () => {
                                 </div>
                             </div>
                             <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-[#0C0C0C] rounded-box w-52">
-                                <li><a>Settings</a></li>
+                                <li><a>Dashboard</a></li>
                                 <li><a>Log in</a></li>
                             </ul>
                         </div>

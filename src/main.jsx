@@ -18,6 +18,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query';
 import PackageDetails from './pages/PackageDetails';
+import AuthProvider from './components/AuthProvider';
 
 const queryClient = new QueryClient();
 
@@ -58,11 +59,11 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      {/* <AuthProvider> */}
-      <HelmetProvider>
-        <RouterProvider router={router} />
-      </HelmetProvider>
-      {/* </AuthProvider> */}
+      <AuthProvider>
+        <HelmetProvider>
+          <RouterProvider router={router} />
+        </HelmetProvider>
+      </AuthProvider>
     </QueryClientProvider>
   </React.StrictMode>
 )
