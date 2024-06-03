@@ -5,7 +5,7 @@
         "tourType": "Cultural Heritage",
         "tripTitle": "Ancient Wonders of Greece",
         "price": "1999",
-        "about": "Explore the rich cultural heritage of Greece, from ancient ruins to vibrant local traditions.",
+        "about": "Explore the rich cultural heritage of Greece, from ancient ruins to vibrant local traditions. This tour takes you through the heart of ancient Greece, visiting iconic landmarks like the Acropolis and the Temple of Poseidon. Immerse yourself in the history and mythology of this fascinating civilization, while enjoying modern comforts and Greek hospitality.",
         "tourPlan": {
             "day1": "Arrival in Athens and welcome dinner.",
             "day2": "Visit the Acropolis and Parthenon.",
@@ -22,7 +22,7 @@
         "tourType": "Adventure and Hiking",
         "tripTitle": "Hiking the Swiss Alps",
         "price": "2499",
-        "about": "Experience the breathtaking beauty of the Swiss Alps with guided hikes and scenic vistas.",
+        "about": "Experience the breathtaking beauty of the Swiss Alps with guided hikes and scenic vistas. This tour is designed for adventure enthusiasts who love the great outdoors. Enjoy challenging hikes, serene valleys, and stunning mountain views. You'll visit charming Swiss villages, stay in comfortable lodges, and savor delicious local cuisine, all while surrounded by the majestic Alps.",
         "tourPlan": {
             "day1": "Arrival in Zurich and welcome dinner.",
             "day2": "Hike to the summit of Mount Pilatus.",
@@ -39,7 +39,7 @@
         "tourType": "Wildlife and Nature",
         "tripTitle": "Safari Adventure in Kenya",
         "price": "2999",
-        "about": "Embark on an unforgettable safari adventure in Kenya's iconic national parks and reserves.",
+        "about": "Embark on an unforgettable safari adventure in Kenya's iconic national parks and reserves. This tour offers a chance to see the Big Five and other wildlife up close in their natural habitats. Stay in luxury lodges and tented camps, enjoy game drives with expert guides, and experience the vibrant culture of the Maasai people. Perfect for nature lovers and wildlife enthusiasts.",
         "tourPlan": {
             "day1": "Arrival in Nairobi and welcome dinner.",
             "day2": "Safari in Amboseli National Park.",
@@ -56,7 +56,7 @@
         "tourType": "Beach and Relaxation",
         "tripTitle": "Tropical Paradise in Maldives",
         "price": "3999",
-        "about": "Relax and unwind in the pristine beaches and crystal-clear waters of the Maldives.",
+        "about": "Relax and unwind on the pristine beaches and crystal-clear waters of the Maldives. This tour is ideal for those seeking a luxurious getaway in a tropical paradise. Enjoy water sports, snorkeling, and island hopping. Stay in overwater bungalows, indulge in spa treatments, and savor gourmet dining experiences. Perfect for couples, honeymooners, and anyone looking to escape to paradise.",
         "tourPlan": {
             "day1": "Arrival in Malé and transfer to resort.",
             "day2": "Relax on the beach and enjoy water sports.",
@@ -73,7 +73,7 @@
         "tourType": "Culinary and Wine",
         "tripTitle": "Gourmet Tour of Italy",
         "price": "3499",
-        "about": "Indulge in the flavors of Italy with a gourmet tour of its most iconic culinary destinations.",
+        "about": "Indulge in the flavors of Italy with a gourmet tour of its most iconic culinary destinations. This tour takes you on a culinary journey through Rome, Tuscany, Florence, Piedmont, and Emilia-Romagna. Enjoy cooking classes, wine tastings, and visits to local markets and farms. Experience the rich food culture of Italy, from fresh pasta and truffles to fine wines and cheeses.",
         "tourPlan": {
             "day1": "Arrival in Rome and welcome dinner.",
             "day2": "Cooking class and tour of local markets.",
@@ -90,7 +90,7 @@
         "tourType": "Cultural Heritage",
         "tripTitle": "Historical Journey Through Egypt",
         "price": "2599",
-        "about": "Discover the ancient wonders of Egypt, from the pyramids to the temples along the Nile.",
+        "about": "Discover the ancient wonders of Egypt, from the pyramids to the temples along the Nile. This tour offers a deep dive into Egypt's rich history and culture. Visit the iconic Pyramids of Giza, the Sphinx, and the treasures of the Egyptian Museum. Cruise the Nile River, explore the Valley of the Kings, and marvel at the grandeur of ancient temples. A must for history buffs and adventurers.",
         "tourPlan": {
             "day1": "Arrival in Cairo and welcome dinner.",
             "day2": "Visit the Pyramids of Giza and the Sphinx.",
@@ -107,7 +107,7 @@
         "tourType": "Adventure and Hiking",
         "tripTitle": "Patagonia Expedition",
         "price": "3299",
-        "about": "Experience the rugged beauty of Patagonia with guided hikes and breathtaking landscapes.",
+        "about": "Experience the rugged beauty of Patagonia with guided hikes and breathtaking landscapes. This tour is perfect for adventurers who love the great outdoors. Hike through Torres del Paine National Park, visit the stunning Grey Glacier, and explore the French Valley. Enjoy comfortable accommodations and hearty meals, all while surrounded by some of the most dramatic scenery on earth.",
         "tourPlan": {
             "day1": "Arrival in Punta Arenas and welcome dinner.",
             "day2": "Hike in Torres del Paine National Park.",
@@ -124,7 +124,7 @@
         "tourType": "Wildlife and Nature",
         "tripTitle": "Amazon Rainforest Expedition",
         "price": "2799",
-        "about": "Delve into the heart of the Amazon Rainforest and discover its incredible biodiversity.",
+        "about": "Delve into the heart of the Amazon Rainforest and discover its incredible biodiversity. This tour offers a unique opportunity to explore one of the world's most vital and vibrant ecosystems. Enjoy guided jungle hikes, boat tours, and wildlife spotting. Visit local indigenous communities, learn about their cultures, and experience the magic of the rainforest. Perfect for nature lovers and adventurers.",
         "tourPlan": {
             "day1": "Arrival in Manaus and welcome dinner.",
             "day2": "Boat tour of the Amazon River.",
@@ -141,7 +141,7 @@
         "tourType": "Beach and Relaxation",
         "tripTitle": "Caribbean Escape in Jamaica",
         "price": "2299",
-        "about": "Relax and rejuvenate on the beautiful beaches of Jamaica with plenty of sun, sand, and sea.",
+        "about": "Relax and rejuvenate on the beautiful beaches of Jamaica with plenty of sun, sand, and sea. This tour offers a perfect blend of relaxation and adventure. Enjoy the stunning Seven Mile Beach, explore the famous Dunn's River Falls, and indulge in local cuisine and culture. Stay in luxurious resorts and experience the vibrant nightlife. Ideal for beach lovers and those seeking a tropical getaway.",
         "tourPlan": {
             "day1": "Arrival in Montego Bay and welcome dinner.",
             "day2": "Relax on Seven Mile Beach.",
@@ -158,7 +158,7 @@
         "tourType": "Culinary and Wine",
         "tripTitle": "French Wine Country Tour",
         "price": "2999",
-        "about": "Savor the finest wines and culinary delights of France's renowned wine regions.",
+        "about": "Savor the finest wines and culinary delights of France's renowned wine regions. This tour is a feast for the senses, taking you through Bordeaux, Burgundy, Champagne, and the Loire Valley. Enjoy exclusive wine tastings, gourmet meals, and visits to picturesque vineyards and historic chateaux. Perfect for wine enthusiasts and food lovers looking to experience the best of French cuisine and wine.",
         "tourPlan": {
             "day1": "Arrival in Paris and welcome dinner.",
             "day2": "Wine tasting in Bordeaux.",

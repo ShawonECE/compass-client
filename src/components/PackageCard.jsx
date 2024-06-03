@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import { CiHeart } from "react-icons/ci";
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const PackageCard = ({tourPackage}) => {
-    const { coverImage, tourType, tripTitle, price } = tourPackage;
+    const { coverImage, tourType, tripTitle, price, _id } = tourPackage;
+    const navigate = useNavigate();
     return (
         <div className="card bg-[#F2613F] bg-opacity-10 shadow-2xl">
             <figure><img src={coverImage} alt="Shoes" /></figure>
@@ -17,7 +19,7 @@ const PackageCard = ({tourPackage}) => {
                     <CiHeart className='text-xl'/>
                 </div>
                 <div className="card-actions justify-end">
-                    <Button text='View Details'></Button>
+                    <Button text='View Details' click={() => navigate(`/package/${_id}`)}></Button>
                 </div>
             </div>
         </div>
