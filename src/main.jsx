@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import Root from './Root';
 import Packages from './pages/Packages';
+import PackagesByType from './pages/PackagesByType';
 import Blogs from './pages/Blogs';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/packages",
         element: <Packages />,
+      },
+      {
+        path: "/packages-by-category/:tourType",
+        element: <PackagesByType />,
       },
       {
         path: "/package/:id",
