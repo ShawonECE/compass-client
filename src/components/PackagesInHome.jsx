@@ -16,7 +16,7 @@ const PackagesInHome = () => {
     
     if (isPending) {
         return (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div className="skeleton h-48"></div>
                 <div className="skeleton h-48"></div>
                 <div className="skeleton h-48"></div>

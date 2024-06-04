@@ -21,6 +21,7 @@ import PackageDetails from './pages/PackageDetails';
 import AuthProvider from './components/AuthProvider';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import GuideDetails from './pages/GuideDetails';
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/package/:id",
         element: <PackageDetails />,
+      },
+      {
+        path: "/guide/:id",
+        element: <GuideDetails />,
       },
       {
         path: "/blogs",

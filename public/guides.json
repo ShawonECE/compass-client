@@ -1,0 +1,202 @@
+[
+    {
+        "name": "John Smith",
+        "image": "https://i.ibb.co/KFYVFY8/guide1.png",
+        "email": "john.smith@example.com",
+        "education": "B.A. in History",
+        "skills": ["Cultural Heritage", "Ancient Ruins", "Museums"],
+        "workExperience": "10 years of guiding tours in Greece and Italy",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "John's knowledge of ancient history is incredible. Highly recommended!",
+                "from": "alex.jones@example.com"
+            },
+            {
+                "rating": 4,
+                "comment": "Very informative and engaging guide.",
+                "from": "mary.smith@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Emma Johnson",
+        "image": "https://i.ibb.co/fXwNQcn/guide2.png",
+        "email": "emma.johnson@example.com",
+        "education": "M.A. in Environmental Science",
+        "skills": ["Wildlife", "Nature Trails", "Photography"],
+        "workExperience": "8 years of guiding nature tours in Kenya and Tanzania",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "Emma is an excellent guide with a passion for wildlife.",
+                "from": "sarah.lee@example.com"
+            },
+            {
+                "rating": 4,
+                "comment": "Great experience, very knowledgeable.",
+                "from": "james.brown@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Michael Brown",
+        "image": "https://i.ibb.co/KFYVFY8/guide1.png",
+        "email": "michael.brown@example.com",
+        "education": "B.S. in Adventure Tourism",
+        "skills": ["Hiking", "Mountain Climbing", "Survival Skills"],
+        "workExperience": "12 years of guiding adventure tours in the Swiss Alps",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "Michael made our hiking trip unforgettable!",
+                "from": "linda.white@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Highly skilled and professional guide.",
+                "from": "paul.green@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Sophia Davis",
+        "image": "https://i.ibb.co/fXwNQcn/guide2.png",
+        "email": "sophia.davis@example.com",
+        "education": "M.A. in Art History",
+        "skills": ["Museums", "Art Galleries", "Cultural Tours"],
+        "workExperience": "7 years of guiding cultural tours in France and Italy",
+        "feedback": [
+            {
+                "rating": 4,
+                "comment": "Sophia's art tours are very insightful.",
+                "from": "daniel.martin@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Amazing guide with deep knowledge of art history.",
+                "from": "emma.wilson@example.com"
+            }
+        ]
+    },
+    {
+        "name": "William Miller",
+        "image": "https://i.ibb.co/KFYVFY8/guide1.png",
+        "email": "william.miller@example.com",
+        "education": "B.A. in Culinary Arts",
+        "skills": ["Gourmet Tours", "Wine Tasting", "Cooking Classes"],
+        "workExperience": "9 years of guiding culinary tours in Italy and France",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "William's culinary tours are a food lover's dream!",
+                "from": "jessica.thomas@example.com"
+            },
+            {
+                "rating": 4,
+                "comment": "Great guide, learned so much about French cuisine.",
+                "from": "mark.jackson@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Olivia Wilson",
+        "image": "https://i.ibb.co/fXwNQcn/guide2.png",
+        "email": "olivia.wilson@example.com",
+        "education": "M.S. in Marine Biology",
+        "skills": ["Snorkeling", "Diving", "Marine Life"],
+        "workExperience": "6 years of guiding marine tours in the Maldives",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "Olivia is an expert in marine life, amazing experience!",
+                "from": "laura.moore@example.com"
+            },
+            {
+                "rating": 4,
+                "comment": "Fantastic guide for snorkeling tours.",
+                "from": "john.taylor@example.com"
+            }
+        ]
+    },
+    {
+        "name": "James Taylor",
+        "image": "https://i.ibb.co/KFYVFY8/guide1.png",
+        "email": "james.taylor@example.com",
+        "education": "B.A. in History",
+        "skills": ["Ancient Egypt", "Archaeology", "Museums"],
+        "workExperience": "11 years of guiding historical tours in Egypt",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "James brought ancient Egypt to life for us. Outstanding guide!",
+                "from": "karen.anderson@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Very knowledgeable and engaging.",
+                "from": "richard.martin@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Isabella Martinez",
+        "image": "https://i.ibb.co/fXwNQcn/guide2.png",
+        "email": "isabella.martinez@example.com",
+        "education": "M.A. in Geography",
+        "skills": ["Geology", "Eco Tours", "Hiking"],
+        "workExperience": "8 years of guiding eco tours in South America",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "Isabella's tours are both educational and fun!",
+                "from": "nancy.robinson@example.com"
+            },
+            {
+                "rating": 4,
+                "comment": "Great guide, very knowledgeable about geology.",
+                "from": "michael.clark@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Daniel Lee",
+        "image": "https://i.ibb.co/KFYVFY8/guide1.png",
+        "email": "daniel.lee@example.com",
+        "education": "B.A. in Adventure Tourism",
+        "skills": ["Trekking", "Wildlife", "Survival Skills"],
+        "workExperience": "10 years of guiding trekking tours in Patagonia",
+        "feedback": [
+            {
+                "rating": 5,
+                "comment": "Daniel's trekking tours are an adventure of a lifetime!",
+                "from": "amy.lewis@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Highly recommend for anyone seeking adventure.",
+                "from": "charles.walker@example.com"
+            }
+        ]
+    },
+    {
+        "name": "Emily White",
+        "image": "https://i.ibb.co/fXwNQcn/guide2.png",
+        "email": "emily.white@example.com",
+        "education": "M.A. in Cultural Anthropology",
+        "skills": ["Cultural Tours", "Local Traditions", "Museums"],
+        "workExperience": "9 years of guiding cultural tours in Asia",
+        "feedback": [
+            {
+                "rating": 4,
+                "comment": "Emily's cultural tours are very immersive.",
+                "from": "thomas.hall@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Excellent guide with deep cultural insights.",
+                "from": "barbara.young@example.com"
+            }
+        ]
+    }
+]
