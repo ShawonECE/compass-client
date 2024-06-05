@@ -3,18 +3,67 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { Helmet } from "react-helmet-async";
 import FeedbackCard from "../components/FeedbackCard";
+import { useContext, useState } from "react";
+import { AuthContext } from "../components/AuthProvider";
+import { useForm } from "react-hook-form";
+import swal from "sweetalert";
 
 const GuideDetails = () => {
     const { id } = useParams();
+    const [modalOpen, setModalOpen] = useState(false);
+    const [userRating, setUserRating] = useState(0);
+    const { user } = useContext(AuthContext);
     const axiosPublic = useAxiosPublic();
 
-    const { isPending, data={} } = useQuery({ queryKey: [`guide_${id}`], queryFn: async() => {
+    const { isPending, data={}, refetch } = useQuery({ queryKey: [`guide_${id}`], queryFn: async() => {
         const data = await axiosPublic.get(`/guide/${id}`);
         return data.data;
     } });
 
-    const { name, image, email, education, skills, workExperience, feedback } = data;
+    const { name, image, email, education, skills, workExperience, feedback , _id} = data;
     let rating = 0;
+
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors }
+    } = useForm();
+
+    const handleRatingModal = () => {
+        if (!user) {
+            swal("You have to log in to give rating!", {
+                icon: "warning",
+            });
+        } else {
+            setModalOpen(true);
+        }
+    };
+
+    const onSubmit = (data) => {
+        const newFeedback = [...feedback];
+        const newRating = {
+            from: user.email,
+            rating: userRating,
+            comment: data.comment
+        };
+        newFeedback.push(newRating);
+        axiosPublic.patch('/rating', { guideId: _id, newFeedback })
+        .then(data => {
+            if (data.data.modifiedCount > 0) {
+                refetch();
+                setModalOpen(false);
+                reset();
+                swal("Rated successfully!", {
+                    icon: "success",
+                });
+            } else {
+                swal("Rating failed!", {
+                    icon: "warning",
+                });
+            }
+        });
+    };
 
     if (isPending) {
         return (
@@ -52,7 +101,7 @@ const GuideDetails = () => {
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled checked={rating === 4} />
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled checked={rating === 5} />
                     </div>
-                    <button className="btn bg-[#0C0C0C] text-[#F2613F] border-x-0 border-t-0 border-b-2 border-b-[#F2613F] rounded-md btn-sm block mt-2">Rate</button>
+                    <button onClick={handleRatingModal} className="btn bg-[#0C0C0C] text-[#F2613F] border-x-0 border-t-0 border-b-2 border-b-[#F2613F] rounded-md btn-sm block mt-2">Rate</button>
                 </div>
             </div>
             <h2 className="text-2xl font-semibold mt-8 mb-2 border-b border-b-[#F2613F] pb-1">Education</h2>
@@ -70,6 +119,38 @@ const GuideDetails = () => {
                 {
                     feedback.map((review, idx) => <FeedbackCard key={idx} feedback={review}></FeedbackCard>)
                 }
+            </div>
+
+            {/* booking modal */}
+            <input type="checkbox" checked={modalOpen} id="my_modal_6" className="modal-toggle" readOnly />
+            <div className="modal" role="dialog">
+                <div className="modal-box">
+                    <form method="dialog">
+                        <button onClick={() => setModalOpen(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div className="flex justify-center">
+                        <div className="rating mt-2">
+                            <input type="radio" className="rating-hidden" checked={ userRating === 0 } disabled />
+                            <input type="radio" className="mask mask-star-2 bg-orange-400" onChange={() => setUserRating(1)} checked={ userRating === 1 } />
+                            <input type="radio" className="mask mask-star-2 bg-orange-400" onChange={() => setUserRating(2)} checked={ userRating === 2 } />
+                            <input type="radio" className="mask mask-star-2 bg-orange-400" onChange={() => setUserRating(3)} checked={ userRating === 3 } />
+                            <input type="radio" className="mask mask-star-2 bg-orange-400" onChange={() => setUserRating(4)} checked={ userRating === 4 } />
+                            <input type="radio" className="mask mask-star-2 bg-orange-400" onChange={() => setUserRating(5)} checked={ userRating === 5 } />
+                        </div>
+                    </div>
+                    <form className="card-body" onSubmit={handleSubmit(onSubmit)} noValidate>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Comment</span>
+                            </label>
+                            <textarea type="text" className="textarea textarea-bordered" {...register("comment", { required: 'Comment is required' })} />
+                            <p className="text-red-500 mt-2">{errors.comment?.message}</p>
+                        </div>
+                        <div className="form-control mt-6">
+                            <button type="submit" className="btn bg-[#F2613F] text-white">Rate</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );
