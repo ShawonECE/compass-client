@@ -117,7 +117,7 @@ const PackageDetails = () => {
             </ul>
 
             {/* booking modal */}
-            <input type="checkbox" checked={modalOpen} id="my_modal_6" className="modal-toggle" />
+            <input type="checkbox" checked={modalOpen} id="my_modal_6" className="modal-toggle" readOnly />
             <div className="modal" role="dialog">
                 <div className="modal-box">
                     <form method="dialog">
