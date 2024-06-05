@@ -23,6 +23,8 @@ import AuthProvider from './components/AuthProvider';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import GuideDetails from './pages/GuideDetails';
+import Stories from './pages/Stories';
+import StoryDetails from './pages/StoryDetails';
 
 const queryClient = new QueryClient();
 
@@ -71,6 +73,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/stories",
+        element: <Stories />,
+      },
+      {
+        path: "/story/:id",
+        element: <StoryDetails />,
       },
     ]
   },
