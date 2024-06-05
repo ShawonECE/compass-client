@@ -26,17 +26,17 @@ const StoryDetails = () => {
     return (
         <div className="mt-6">
             <Helmet>
-                <title>Package Details</title>
+                <title>Story Details</title>
             </Helmet>
             <div className="flex justify-between">
-                <h1 className="text-3xl font-semibold">{touristName} was in {tourLocation}</h1>
-                <h1 className="text-3xl font-bold">By: <span className="text-[#F2613F]">{touristName}</span></h1>
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">{touristName} was in {tourLocation}</h1>
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">By: <span className="text-[#F2613F]">{touristName}</span></h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8">
                 <img src={image1} alt="" className="w-full rounded-md" />
                 <img src={image2} alt="" className="w-full rounded-md" />
             </div>
-            <h2 className="text-2xl font-semibold mt-8 mb-2 border-b border-b-[#F2613F] pb-1">Story</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-2 border-b border-b-[#F2613F] pb-1">Story</h2>
             <p className="text-lg mt-3 text-justify">{story}</p>
         </div>
     );

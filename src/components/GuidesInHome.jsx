@@ -1,14 +1,8 @@
-import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "../hooks/useAxiosPublic";
 import GuideCard from "./GuideCard";
+import useGuides from "../hooks/useGuides";
 
 const GuidesInHome = () => {
-    const axiosPublic = useAxiosPublic();
-
-    const { isPending, data } = useQuery({ queryKey: ['guides'], queryFn: async() => {
-        const data = await axiosPublic.get('/guides');
-        return data.data;
-    } });
+    const { isPending, data } = useGuides();
 
     if (isPending) {
         return (
