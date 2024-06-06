@@ -25,6 +25,11 @@ import Register from './pages/Register';
 import GuideDetails from './pages/GuideDetails';
 import Stories from './pages/Stories';
 import StoryDetails from './pages/StoryDetails';
+import Dashboard from './dashboard/Dashboard';
+import Profile from './dashboard/Profile';
+import Bookings from './dashboard/user/Bookings';
+import Wishlist from './dashboard/user/Wishlist';
+import BeGuide from './dashboard/user/BeGuide';
 
 const queryClient = new QueryClient();
 
@@ -39,48 +44,71 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/packages",
+        path: "packages",
         element: <Packages />,
       },
       {
-        path: "/packages-by-category/:tourType",
+        path: "packages-by-category/:tourType",
         element: <PackagesByType />,
       },
       {
-        path: "/package/:id",
+        path: "package/:id",
         element: <PackageDetails />,
       },
       {
-        path: "/guide/:id",
+        path: "guide/:id",
         element: <GuideDetails />,
       },
       {
-        path: "/blogs",
+        path: "blogs",
         element: <Blogs />,
       },
       {
-        path: "/about-us",
+        path: "about-us",
         element: <About />,
       },
       {
-        path: "/contact-us",
+        path: "contact-us",
         element: <Contact />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "/register",
+        path: "register",
         element: <Register />,
       },
       {
-        path: "/stories",
+        path: "stories",
         element: <Stories />,
       },
       {
-        path: "/story/:id",
+        path: "story/:id",
         element: <StoryDetails />,
+      },
+    ]
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard></Dashboard>,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "my-bookings",
+        element: <Bookings />,
+      },
+      {
+        path: "my-wishlist",
+        element: <Wishlist />,
+      },
+      {
+        path: "be-guide",
+        element: <BeGuide />,
       },
     ]
   },

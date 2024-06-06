@@ -89,6 +89,7 @@ const NavBar = () => {
                                         <li className="mb-2 text-[#F2613F]">{ user.email }</li>
                                     </>
                                 }
+                                <li><NavLink to="/dashboard/profile" style={handleActiveNavLink2}>Dashboard</NavLink></li>
                                 <li>
                                     {
                                         !loading && (user ?
