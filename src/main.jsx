@@ -30,6 +30,10 @@ import Profile from './dashboard/Profile';
 import Bookings from './dashboard/user/Bookings';
 import Wishlist from './dashboard/user/Wishlist';
 import BeGuide from './dashboard/user/BeGuide';
+import AddPackage from './dashboard/admin/AddPackage';
+import ManageUsers from './dashboard/admin/ManageUsers';
+import GuideRequests from './dashboard/admin/GuideRequests';
+import AssignedTours from './dashboard/guide/AssignedTours';
 
 const queryClient = new QueryClient();
 
@@ -98,6 +102,8 @@ const router = createBrowserRouter([
         path: "profile",
         element: <Profile />,
       },
+
+      // user routes
       {
         path: "my-bookings",
         element: <Bookings />,
@@ -110,6 +116,27 @@ const router = createBrowserRouter([
         path: "be-guide",
         element: <BeGuide />,
       },
+
+      // admin routes
+      {
+        path: "add-package",
+        element: <AddPackage />,
+      },
+      {
+        path: "manage-users",
+        element: <ManageUsers />,
+      },
+      {
+        path: "guide-requests",
+        element: <GuideRequests />,
+      },
+
+      // guide routes
+      {
+        path: "assigned-tours",
+        element: <AssignedTours />,
+      },
+
     ]
   },
 ]);

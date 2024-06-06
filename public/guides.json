@@ -198,5 +198,25 @@
                 "from": "barbara.young@example.com"
             }
         ]
+    },
+    {
+        "name": "Shawon",
+        "image": "https://i.ibb.co/dPspf1x/me-crop.jpg",
+        "email": "shawon2@yahoo.com",
+        "education": "M.A. in Cultural Anthropology",
+        "skills": ["Cultural Tours", "Local Traditions", "Museums"],
+        "workExperience": "9 years of guiding cultural tours in Asia",
+        "feedback": [
+            {
+                "rating": 4,
+                "comment": "Shawon's cultural tours are very immersive.",
+                "from": "thomas.hall@example.com"
+            },
+            {
+                "rating": 5,
+                "comment": "Excellent guide with deep cultural insights.",
+                "from": "barbara.young@example.com"
+            }
+        ]
     }
 ]
