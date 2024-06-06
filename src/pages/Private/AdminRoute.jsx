@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
-import { AuthContext } from './AuthProvider';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { AuthContext } from '../../components/AuthProvider';
+import useRole from '../../hooks/useRole';
 
-const Private = ({children}) => {
+const AdminRoute = ({children}) => {
     const {user, loading} = useContext(AuthContext);
-    const location = useLocation();
-    if (loading) {
+    const { data: role, isPending: rolePending } = useRole();
+    if (loading || rolePending) {
         return (
             <div className="flex flex-col gap-4 w-full">
                 <div className="skeleton h-32 w-full"></div>
@@ -16,16 +17,16 @@ const Private = ({children}) => {
             </div>
         );
     } else {
-        if (user) {
+        if (user && role === 'admin') {
             return children;
         } else {
-            return <Navigate state={{to: location.pathname}} to='/login'></Navigate>;
+            return <Navigate to='/' replace></Navigate>;
         }
     }
 };
 
-Private.propTypes = {
+AdminRoute.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default Private;
+export default AdminRoute;

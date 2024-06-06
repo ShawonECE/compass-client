@@ -34,6 +34,10 @@ import AddPackage from './dashboard/admin/AddPackage';
 import ManageUsers from './dashboard/admin/ManageUsers';
 import GuideRequests from './dashboard/admin/GuideRequests';
 import AssignedTours from './dashboard/guide/AssignedTours';
+import Private from './pages/Private/Private';
+import UserRoute from './pages/Private/UserRoute';
+import AdminRoute from './pages/Private/AdminRoute';
+import GuideRoute from './pages/Private/GuideRoute';
 
 const queryClient = new QueryClient();
 
@@ -95,7 +99,7 @@ const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <Dashboard></Dashboard>,
+    element: <Private><Dashboard></Dashboard></Private>,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -106,35 +110,35 @@ const router = createBrowserRouter([
       // user routes
       {
         path: "my-bookings",
-        element: <Bookings />,
+        element: <UserRoute><Bookings /></UserRoute>,
       },
       {
         path: "my-wishlist",
-        element: <Wishlist />,
+        element: <UserRoute><Wishlist /></UserRoute>,
       },
       {
         path: "be-guide",
-        element: <BeGuide />,
+        element: <UserRoute><BeGuide /></UserRoute>,
       },
 
       // admin routes
       {
         path: "add-package",
-        element: <AddPackage />,
+        element: <AdminRoute><AddPackage /></AdminRoute>,
       },
       {
         path: "manage-users",
-        element: <ManageUsers />,
+        element: <AdminRoute><ManageUsers /></AdminRoute>,
       },
       {
         path: "guide-requests",
-        element: <GuideRequests />,
+        element: <AdminRoute><GuideRequests /></AdminRoute>,
       },
 
       // guide routes
       {
         path: "assigned-tours",
-        element: <AssignedTours />,
+        element: <GuideRoute><AssignedTours /></GuideRoute>,
       },
 
     ]
