@@ -51,14 +51,14 @@ const Register = () => {
                 <div className="text-center lg:text-left">
                     <img src={registerImg} alt="" className="w-full"/>
                 </div>
-                <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 dark:bg-[#222831]">
-                    <h2 className="text-center text-3xl font-bold mt-5 dark:text-[#E7F6F2]">Register Here</h2>
+                <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <h2 className="text-center text-3xl font-bold mt-5">Register Here</h2>
                     <form className="card-body" onSubmit={handleSubmit(onSubmit)} noValidate>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text dark:text-white">Name</span>
+                                <span className="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Enter your name" className="input input-bordered dark:text-white dark:bg-gray-700" {...register("name", { 
+                            <input type="text" placeholder="Enter your name" className="input input-bordered" {...register("name", { 
                                 required: 'Name is required',
                                 pattern: {
                                     value: /^[a-zA-Z\s]+$/,
@@ -68,9 +68,9 @@ const Register = () => {
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text dark:text-white">Email</span>
+                                <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="Enter your email" className="input input-bordered dark:text-white dark:bg-gray-700" {...register("email", { 
+                            <input type="email" placeholder="Enter your email" className="input input-bordered" {...register("email", { 
                                 required: 'Email is required',
                                 pattern: {
                                     value: /^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,}$/,
@@ -80,16 +80,16 @@ const Register = () => {
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text dark:text-white">Photo URL</span>
+                                <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="url" placeholder="Enter your photo url" className="input input-bordered dark:text-white dark:bg-gray-700" {...register("photoURL", { required: 'Photo URL is required' })} />
+                            <input type="url" placeholder="Enter your photo url" className="input input-bordered" {...register("photoURL", { required: 'Photo URL is required' })} />
                             <p className="text-red-500 mt-2">{errors.photoURL?.message}</p>
                         </div>
                         <div className="form-control relative">
                             <label className="label">
-                                <span className="label-text dark:text-white">Password</span>
+                                <span className="label-text">Password</span>
                             </label>
-                            <input type={showPassword ? 'text' : 'password'} placeholder="Enter password" className="input input-bordered dark:text-white dark:bg-gray-700" {...register("password", {
+                            <input type={showPassword ? 'text' : 'password'} placeholder="Enter password" className="input input-bordered" {...register("password", {
                                 required: 'Password is required', 
                                 pattern: {
                                     value: /(?=.*[a-z])(?=.*[A-Z]).{6,}/,

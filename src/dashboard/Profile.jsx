@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../components/AuthProvider";
 import useRole from "../hooks/useRole";
+import AddStory from "./user/AddStory";
 
 const Profile = () => {
     const { data: role } = useRole();
@@ -21,6 +22,10 @@ const Profile = () => {
                 {
                     role === "guide" &&
                     <img src="https://i.ibb.co/Kb8QcCh/guide.png" alt="" className="max-w-72 mx-auto md:max-w-96"></img>
+                }
+                {
+                    role === "user" &&
+                    <AddStory></AddStory>
                 }
             </div>
         </div>
