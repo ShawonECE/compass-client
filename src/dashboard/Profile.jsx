@@ -8,7 +8,7 @@ const Profile = () => {
     const { user } = useContext(AuthContext);
     
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto px-4 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto px-4 my-10 gap-10">
             <div>
                 <img src={ user.photoURL } alt="" className="max-w-56 mx-auto md:max-w-72 rounded-full"/>
                 <h2 className="text-3xl font-bold mt-5 text-center">Name: { user.displayName }</h2>

@@ -34,7 +34,7 @@ const Bookings = () => {
         })
         .then((willDelete) => {
             if (willDelete) {
-                axiosSecure.delete(`/${bookingId}`)
+                axiosSecure.delete(`/booking/${bookingId}`)
                 .then(data => {
                     if (data.data.deletedCount === 1) {
                         swal("Booking has been canceled!", {
@@ -52,7 +52,7 @@ const Bookings = () => {
     };
 
     return (
-        <div>
+        <div className='my-10'>
             {
                 data.length ? <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>You have { data.length } bookings</h2>
                 :
