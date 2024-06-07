@@ -50,7 +50,7 @@ const PackageDetails = () => {
     const onSubmit = (data) => {
         const guideName = data.guide.split(" (")[0];
         const guideId = data.guide.split(":")[1].split(")")[0];
-        const newData = { package: tripTitle, packageId: _id, touristName: user.displayName, email: user.email, image: user.photoURL, guideName, guideId, price: price, date: data.date };
+        const newData = { package: tripTitle, packageId: _id, touristName: user.displayName, email: user.email, image: user.photoURL, guideName, guideId, price: price, date: data.date, status: 'in review' };
         axiosPublic.post('/booking', newData)
         .then(data => {
             if (data.data.insertedId) {

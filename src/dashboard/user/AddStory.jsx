@@ -15,6 +15,7 @@ const AddStory = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
@@ -64,6 +65,7 @@ const AddStory = () => {
         const res = await axiosPublic.post('/story', newData);
         if (res.data.insertedId) {
             setModalOpen(false);
+            reset();
             swal("Added story successfully!", {
                 icon: "success",
             });
