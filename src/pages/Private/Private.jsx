@@ -8,12 +8,7 @@ const Private = ({children}) => {
     const location = useLocation();
     if (loading) {
         return (
-            <div className="flex flex-col gap-4 w-full">
-                <div className="skeleton h-32 w-full"></div>
-                <div className="skeleton h-4 w-1/2"></div>
-                <div className="skeleton h-4 w-full"></div>
-                <div className="skeleton h-4 w-full"></div>
-            </div>
+            <div className="skeleton h-48 m-10"></div>
         );
     } else {
         if (user) {

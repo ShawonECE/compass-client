@@ -16,7 +16,7 @@ const Wishlist = () => {
 
     if (isPending) {
         return (
-            <div className="skeleton w-full p-5 h-48"></div>
+            <div className="skeleton m-10 h-48"></div>
         )
     }
 

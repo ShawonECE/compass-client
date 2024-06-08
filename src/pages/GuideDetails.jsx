@@ -117,6 +117,10 @@ const GuideDetails = () => {
             <h2 className="text-2xl font-semibold mt-8 mb-2 border-b border-b-[#F2613F] pb-1">Tourist Feedback</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-8">
                 {
+                    !feedback.length &&
+                    <h2>No feedbacks yet</h2>
+                }
+                {
                     feedback.map((review, idx) => <FeedbackCard key={idx} feedback={review}></FeedbackCard>)
                 }
             </div>
