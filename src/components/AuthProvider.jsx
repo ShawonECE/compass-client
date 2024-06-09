@@ -40,10 +40,13 @@ const AuthProvider = ({children}) => {
                 axiosPublic.post('/jwt', { email: currentUser.email })
                 .then(res => {
                     localStorage.setItem('token', res.data.token);
-                    axiosPublic.post('/user', { email: currentUser.email })
+                    //console.log(currentUser.displayName);
+                    axiosPublic.post('/user', { email: currentUser.email, name: currentUser.displayName })
                     .then(res => {
                         if (res.data.insertedId) {
-                            console.log('User saved');
+                            //console.log('User saved');
+                        } else {
+                            //console.log('User not saved');
                         }
                     });
                 });
