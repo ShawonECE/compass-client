@@ -1,11 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
 import useAxiosSecure from './../../hooks/useAxiosSecure';
 import { AuthContext } from '../../components/AuthProvider';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import BookingRow from './BookingRow';
 import swal from 'sweetalert';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+import CheckoutForm from './CheckoutForm';
+
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PK);
 
 const Bookings = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [id, setId] = useState('');
+    const [price, setPrice] = useState(0);
     const axiosSecure = useAxiosSecure();
     const { user } = useContext(AuthContext);
 
@@ -20,8 +28,10 @@ const Bookings = () => {
         )
     }
 
-    const handlePaymentModal = (bookingId, price) => {
-        console.log('payment modal');
+    const handlePaymentModal = (id, price) => {
+        setPrice(parseInt(price));
+        setId(id);
+        setModalOpen(true);
     };
 
     const handleDelete = (bookingId) => {
@@ -77,6 +87,21 @@ const Bookings = () => {
                         }
                     </tbody>
                 </table>
+            </div>
+
+            <input type="checkbox" checked={modalOpen} id="my_modal_6" className="modal-toggle" readOnly />
+            <div className="modal" role="dialog">
+                <div className="modal-box flex justify-center">
+                    <form method="dialog">
+                        <button onClick={() => setModalOpen(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    {
+                        modalOpen &&
+                        <Elements stripe={stripePromise}>
+                            <CheckoutForm price={price} bookingId={id} setModalOpen={setModalOpen} refetch={refetch} />
+                        </Elements>
+                    }
+                </div>
             </div>
         </div>
     );
