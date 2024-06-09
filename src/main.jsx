@@ -38,6 +38,7 @@ import Private from './pages/Private/Private';
 import UserRoute from './pages/Private/UserRoute';
 import AdminRoute from './pages/Private/AdminRoute';
 import GuideRoute from './pages/Private/GuideRoute';
+import BlogDetails from './pages/BlogDetails';
 
 const queryClient = new QueryClient();
 
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "blogs",
         element: <Blogs />,
+      },
+      {
+        path: "blog/:id",
+        element: <BlogDetails />,
       },
       {
         path: "about-us",
