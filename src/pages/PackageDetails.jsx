@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { Helmet } from "react-helmet-async";
 import { useContext, useState } from "react";
@@ -13,6 +13,7 @@ const PackageDetails = () => {
     const { id } = useParams();
     const { user } = useContext(AuthContext);
     const [modalOpen, setModalOpen] = useState(false);
+    const navigate = useNavigate();
     let days = [];
 
     const axiosPublic = useAxiosPublic();
@@ -56,9 +57,17 @@ const PackageDetails = () => {
             if (data.data.insertedId) {
                 setModalOpen(false);
                 reset();
-                swal("Booked successfully!", {
+                swal({
+                    title: "Booked Successfully!",
                     icon: "success",
-                });
+                    buttons: ["My bookings", true]
+                  })
+                  .then((willDelete) => {
+                    if (!willDelete) {
+                      navigate('/dashboard/my-bookings');
+                      }
+                    }
+                  );
             } else {
                 swal("Booking failed!", {
                     icon: "warning",
