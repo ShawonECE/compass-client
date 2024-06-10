@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import PackageCard from "../components/PackageCard";
 import SectionTitle from './../components/SectionTitle';
+import { Helmet } from "react-helmet-async";
 
 const Packages = () => {
     const axiosPublic = useAxiosPublic();
@@ -24,6 +25,9 @@ const Packages = () => {
 
     return (
         <div className="mt-5">
+            <Helmet>
+                <title>Compass | Packages</title>
+            </Helmet>
             <SectionTitle text="Discover Our Offerings and Team" marginTop={10}></SectionTitle>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {

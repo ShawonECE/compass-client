@@ -3,6 +3,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";
+import { Helmet } from "react-helmet-async";
 
 const AddPackage = () => {
     const axiosSecure = useAxiosSecure();
@@ -113,6 +114,9 @@ const AddPackage = () => {
     };
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>Add package</title>
+            </Helmet>
             <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>Add a Tour Package</h2>
             <form className="card-body" onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className="form-control">

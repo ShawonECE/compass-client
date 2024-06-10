@@ -7,6 +7,7 @@ import swal from 'sweetalert';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import CheckoutForm from './CheckoutForm';
+import { Helmet } from 'react-helmet-async';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PK);
 
@@ -63,6 +64,9 @@ const Bookings = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>My bookings</title>
+            </Helmet>
             {
                 data.length ? <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>You have { data.length } bookings</h2>
                 :

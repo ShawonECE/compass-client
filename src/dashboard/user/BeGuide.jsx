@@ -5,6 +5,7 @@ import swal from "sweetalert";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { Helmet } from "react-helmet-async";
 
 const BeGuide = () => {
     const { user } = useContext(AuthContext);
@@ -61,6 +62,9 @@ const BeGuide = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>Be a guide</title>
+            </Helmet>
             {
                 data.requested && <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>Your request is submitted. Please wait for the confirmation.</h2>
 

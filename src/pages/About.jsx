@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="mt-6">
             <Helmet>
-                <title>Compass | About</title>
+                <title>Compass | About Us</title>
             </Helmet>
             <SectionTitle text="About Us" marginTop={10}></SectionTitle>
             <h2 className="text-2xl font-semibold mt-8 mb-2 border-b border-b-[#F2613F] pb-1">Introduction</h2>

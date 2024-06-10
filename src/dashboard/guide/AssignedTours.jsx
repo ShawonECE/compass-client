@@ -4,6 +4,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import AssignedRow from "./AssignedRow";
 import swal from "sweetalert";
+import { Helmet } from "react-helmet-async";
 
 const AssignedTours = () => {
     const axiosSecure = useAxiosSecure();
@@ -74,6 +75,9 @@ const AssignedTours = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>Assigned tours</title>
+            </Helmet>
             {
                 bookings.length ? <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>You have { bookings.length } assigned tours</h2>
                 :

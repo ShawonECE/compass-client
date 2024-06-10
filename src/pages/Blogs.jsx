@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import SectionTitle from "../components/SectionTitle";
 import BlogCard from "../components/BlogCard";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
     const axiosPublic = useAxiosPublic();
@@ -23,6 +24,9 @@ const Blogs = () => {
 
     return (
         <div className="mt-5">
+            <Helmet>
+                <title>Compass | Blogs</title>
+            </Helmet>
             <SectionTitle text="Read blogs about tourism" marginTop={10}></SectionTitle>
             <div className="grid grid-cols-1 gap-6 mt-10">
                 {

@@ -4,6 +4,7 @@ import { AuthContext } from "../../components/AuthProvider";
 import { useQuery } from "@tanstack/react-query";
 import WishRow from "./WishRow";
 import swal from "sweetalert";
+import { Helmet } from "react-helmet-async";
 
 const Wishlist = () => {
     const axiosSecure = useAxiosSecure();
@@ -49,6 +50,9 @@ const Wishlist = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>My wishlist</title>
+            </Helmet>
             {
                 <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>You have { data.length } packages in wishlist</h2>
             }

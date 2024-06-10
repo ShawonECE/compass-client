@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../components/AuthProvider";
 import useRole from "../hooks/useRole";
 import AddStory from "./user/AddStory";
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
     const { data: role } = useRole();
@@ -9,6 +10,9 @@ const Profile = () => {
     
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 container mx-auto px-4 my-10 gap-10">
+            <Helmet>
+                <title>Dashboard | Profile</title>
+            </Helmet>
             <div>
                 <img src={ user.photoURL } alt="" className="max-w-56 mx-auto md:max-w-72 rounded-full"/>
                 <h2 className="text-3xl font-bold mt-5 text-center">Name: { user.displayName }</h2>

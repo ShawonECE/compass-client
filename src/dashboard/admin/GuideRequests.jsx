@@ -3,6 +3,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import RequestRow from "./RequestRow";
 import { useState } from "react";
 import swal from "sweetalert";
+import { Helmet } from "react-helmet-async";
 
 const GuideRequests = () => {
     const axiosSecure = useAxiosSecure();
@@ -96,6 +97,9 @@ const GuideRequests = () => {
 
     return (
         <div className='my-10'>
+            <Helmet>
+                <title>Guide requests</title>
+            </Helmet>
             {
                 data.length ? <h2 className='text-center text-2xl text-[#F2613F] font-bold mb-5'>Total { data.length } requests to be a guide</h2>
                 :

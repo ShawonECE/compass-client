@@ -62,7 +62,7 @@ const Login = () => {
     return (
         <div className="hero min-h-screen bg-[#F2613F] bg-opacity-10 mt-10 rounded-2xl">
             <Helmet>
-                <title>JobQuest | Log In</title>
+                <title>Compass | Log In</title>
             </Helmet>
             <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                 <div className="text-center lg:text-left">

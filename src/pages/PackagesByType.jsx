@@ -3,6 +3,7 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 import PackageCard from "../components/PackageCard";
 import SectionTitle from './../components/SectionTitle';
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Packages = () => {
     const axiosPublic = useAxiosPublic();
@@ -26,6 +27,9 @@ const Packages = () => {
 
     return (
         <div className="mt-5">
+            <Helmet>
+                <title>Packages by type</title>
+            </Helmet>
             <SectionTitle text={`Discover ${tourType} Tour Packages`} marginTop={10}></SectionTitle>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {
