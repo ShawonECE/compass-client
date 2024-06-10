@@ -16,7 +16,6 @@ const Contact = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        console.log(data);
         axiosPublic.post('/message', data)
         .then(res => {
             if (res.data.insertedId) {
@@ -41,7 +40,7 @@ const Contact = () => {
     return (
         <div className="hero min-h-screen bg-[#F2613F] bg-opacity-10 mt-10 rounded-2xl">
             <Helmet>
-                <title>JobQuest | Register</title>
+                <title>Compass | Contact Us</title>
             </Helmet>
             <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                 <div>
