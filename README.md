@@ -4,7 +4,7 @@ Live Link: https://compass-55799.web.app
 
 ## Category
 
-Tourism Guide Site (Assignment_Category_0003)
+Tourism Guide Site
 
 ## Introduction
 
