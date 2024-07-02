@@ -64,7 +64,7 @@ This project uses Vite for development and build processes. To clone and run the
     ```
     npm install  # or yarn install
     ```
-3. Set Up Firebase Configuration (Important): This project relies on Firebase for backend features. To use Firebase functionalities, you'll need to configure it with your own project's credentials. Here's how: 
+3. Set Up Firebase Configuration (Important): This project relies on Firebase for authentication features. To use Firebase functionalities, you'll need to configure it with your own project's credentials. Here's how: 
     - Create `.env.local`: In your project directory (where you cloned the repository), create a new file named `.env.local`.
     -  Define Firebase Configurations: Inside the `.env.local` file, define each Firebase configuration property with its corresponding value. Here's an example:
         ```
