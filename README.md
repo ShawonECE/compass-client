@@ -10,8 +10,7 @@ https://compass-55799.web.app
 
 Compass is a dynamic tourism website empowering explorers to craft their dream vacations. Browse curated travel packages, wishlist must-see destinations, and connect with experienced guides - all in one place.  This README provides setup instructions and details key functionalities.
 
-### Top Features
----
+## Top Features
 
 #### For users
 
@@ -32,8 +31,7 @@ Compass is a dynamic tourism website empowering explorers to craft their dream v
 
 - Tour Management: View assigned tours and easily accept or decline participation.
 
-### Used packages
----
+## Used packages
 
 - React Hook Form to handle forms with ease.
 - Tanstack query to manage fetched data states.
